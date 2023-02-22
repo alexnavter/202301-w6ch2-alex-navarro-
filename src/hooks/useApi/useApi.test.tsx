@@ -1,9 +1,9 @@
 import { renderHook } from "@testing-library/react";
+import Wrapper from "../../mocks/Wrapper";
+import { RobotStructure } from "../../types/types";
+import { server } from "../../mocks/server";
+import { errorHandlers } from "../../mocks/handlers";
 import useApi from "./useApi";
-import Wrapper from "../mocks/Wrapper";
-import { RobotStructure } from "../types/types";
-import { server } from "../mocks/server";
-import { errorHandlers } from "../mocks/handlers";
 
 const mockTerminatorRobot: RobotStructure = {
   id: "744637g",
